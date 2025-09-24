@@ -135,7 +135,9 @@
 .post-content {
     color: #555;
     line-height: 1.5;
-}.form-section {
+}
+
+.form-section {
     max-width: 600px;
     margin: 2rem auto;
     padding: 2rem;
@@ -201,4 +203,42 @@
 
 .post-form button:active {
     transform: scale(0.97);
+}
+
+.post-form select {
+    width: 100%;
+    padding: 0.75rem 2.5rem 0.75rem 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+    background: #fff url("data:image/svg+xml;utf8,<svg fill='%23666' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>") no-repeat right 0.8rem center;
+    background-size: 1.2rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    appearance: none;
+    /* removes default arrow */
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.post-form select:hover {
+    border-color: #007bff;
+    box-shadow: 0 3px 8px rgba(0, 123, 255, 0.15);
+}
+
+.post-form select:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2);
+}
+
+.post-form option {
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+.post-form button:disabled {
+    background: #bbb;
+    cursor: not-allowed;
 }
