@@ -1,13 +1,23 @@
 import './App.css'
 import Counter from './features/counter/Counter'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
+const router = createBrowserRouter([
+  {
+    element: < Counter />,
+    path: "/"
+  },
+  {
+    path: "/post",
+    element: ""
+  }
+])
 
 function App() {
 
   return (
-    <>
-      <Counter />
-    </>
+    <RouterProvider router={router}></RouterProvider  >
+
   )
 }
 
