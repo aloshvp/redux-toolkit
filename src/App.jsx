@@ -1,7 +1,8 @@
 import './App.css'
 import Counter from './features/counter/Counter'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import PostList from './features/post/PostList'
+import PostPage from './Pages/PostPage'
+// import PostList from './features/post/PostList'
 
 const router = createBrowserRouter([
   {
@@ -10,7 +11,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/posts",
-    element: <PostList />
+    element: <PostPage />
   }
 ])
 
