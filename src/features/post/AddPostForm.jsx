@@ -44,14 +44,6 @@ const AddPostForm = () => {
                     placeholder="Enter a title..."
                 />
 
-                <label htmlFor="postContent">Post Content</label>
-                <textarea
-                    id="postContent"
-                    value={content}
-                    onChange={(e) => setContent(e.target.value)}
-                    placeholder="Write your content here..."
-                />
-
                 <label htmlFor="postAuthor">Author</label>
                 <select id="postAuthor"
                     value={userId}
@@ -63,6 +55,13 @@ const AddPostForm = () => {
                     {userOptions}
                 </select>
 
+                <label htmlFor="postContent">Post Content</label>
+                <textarea
+                    id="postContent"
+                    value={content}
+                    onChange={(e) => setContent(e.target.value)}
+                    placeholder="Write your content here..."
+                />
 
                 <button type="button"
                     onClick={onSavePostClicked}
